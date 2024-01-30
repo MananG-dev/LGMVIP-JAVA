@@ -15,15 +15,15 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class T1 extends JFrame implements ItemListener, ActionListener {
+public class TicTacToe extends JFrame implements ItemListener, ActionListener {
 	private static final long serialVersionUID = 1L;
 	private JButton[] buttons = new JButton[9];
 	private JButton resetButton;
 	private JButton startButton;
 	private JPanel welcomePanel;
 	private boolean playerXTurn = true;
-	private Icon x = new ImageIcon("C://Users//mgarg//Desktop//New folder (2)//TicTacToe//src//com//main//X.jpg");
-	private Icon o = new ImageIcon("C://Users//mgarg//Desktop//New folder (2)//TicTacToe//src//com//main//O.JPG");
+	private Icon x = new ImageIcon("C://Users//mgarg//Desktop//New folder//TicTacToe//src//com//main//X.jpg");
+	private Icon o = new ImageIcon("C://Users//mgarg//Desktop//New folder//TicTacToe//src//com//main//O.JPG");
 	
 	
 	int a[][] = { { 10, 1, 2, 3, 11 }, { 10, 1, 4, 7, 11 }, { 10, 1, 5, 9, 11 }, { 10, 2, 5, 8, 11 },
@@ -31,7 +31,7 @@ public class T1 extends JFrame implements ItemListener, ActionListener {
 	int a1[][] = { { 10, 1, 2, 3, 11 }, { 10, 1, 4, 7, 11 }, { 10, 1, 5, 9, 11 }, { 10, 2, 5, 8, 11 },
 			{ 10, 3, 5, 7, 11 }, { 10, 3, 6, 9, 11 }, { 10, 4, 5, 6, 11 }, { 10, 7, 8, 9, 11 } };
 	
-	public T1() {
+	public TicTacToe() {
 		super("Tic Tac Toe - By Manan");
 
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -146,7 +146,7 @@ public class T1 extends JFrame implements ItemListener, ActionListener {
 			button.setIcon(null);
 		}
 		playerXTurn = true;
-		new T1();
+		new TicTacToe();
 	}
 	
 	private boolean checkForWin() {
